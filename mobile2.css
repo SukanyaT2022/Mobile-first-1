@@ -1,0 +1,72 @@
+body,html{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+      
+    }
+  /*body,html is for overall to fit everyhting in the box*/  
+
+
+
+.mainBox{
+    width: 90%;
+    margin: auto; /*it will help everything to be center*/
+    display: flex;
+    flex-wrap: wrap;
+    /*display flex and flex wrap wrap help to make media quries ipad to show 2 box on each roa*/
+}
+
+.childBox{
+    width:90%;
+    margin: 20px auto;
+    border: 10px solid lightpink ;
+    padding:10px;
+text-align: justify; /*justify make every line equally*/
+
+}
+
+/*fix img becasue it too big to fit the box */
+
+.childBox img{
+width: 100%;
+
+
+}
+h2{
+    text-align: center;
+}
+/* summer to be center*/
+
+
+
+/* media queries for ipad
+*/
+
+@media(min-width: 768px){
+    .childBox{
+        background-color: aquamarine;
+        width: 40%;/* 40% it will show 2 box on each row*/
+      
+    
+    }
+    
+    }
+    
+
+
+    /* media queries for tablet
+*/
+
+@media(min-width: 1280px){
+    .childBox{
+        background-color: aquamarine;
+        width: 20%;
+        /* how many percent of width--important that we include and think about margin
+        this is show 4 box in one row*/
+        
+      
+    
+    }
+    
+    }
+    
